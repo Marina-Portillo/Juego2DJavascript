@@ -1,0 +1,102 @@
+/* Estilo para ocultar las letras no adivinadas */
+.hidden {
+    color: transparent;
+}
+
+/* Estilos para el canvas en el estado inicial */
+#canvas {
+    display: none;
+}
+
+/* Estilos generales del cuerpo del documento */
+body {
+    background-color: rgb(35, 109, 247);
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+    margin-right: -200px;
+    
+}
+
+    /* Estilos para la sección de letras usadas */
+#usedLetters {
+    margin-top: 150px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(252, 252, 10);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 4px solid #fff;
+    height: 100px;
+    margin-left: 1400px;
+    width: 400px;
+}
+
+#canvas {
+    border: 3px solid #fff;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: block;
+     margin-left: 1400px;
+}
+
+/* Estilos para el contenedor del ahorcado */
+#hangmanContainer {
+    margin-top: -80px;
+    flex-direction: column;
+} 
+
+
+/* Estilos para el contenedor del juego */
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 700px;
+    margin-top: 60px;
+    
+}
+
+/* Estilos para las letras del juego */
+.letter {
+    margin: 0 30px; 
+    position: relative;
+    text-align: center;
+    font-size: 3vw; 
+}
+
+/* Línea que separa las letras */
+.letter::after {
+    content: ' ';
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    min-width: 10px;
+}
+
+/* Estilos para el botón de inicio del juego */
+#startButton {
+    margin-top: 20px;
+    appearance: none;
+    font-family: sans-serif;
+    border: none;
+    width: 15vw; 
+    padding: 2vw; 
+    background: #da0909;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2vw;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-left: 700px;
+}
+
